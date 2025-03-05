@@ -1,0 +1,144 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 60%;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Header */
+header {
+    text-align: center;
+    background: #004b87;
+    color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* Sections */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+section:hover {
+    background: #eef5ff;
+}
+
+/* Section Titles */
+h2 {
+    background: #004b87;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    position: relative;
+    transition: 0.3s;
+}
+
+ul li:hover {
+    padding-left: 10px;
+    color: #004b87;
+}
+
+ul li::before {
+    content: "✔";
+    color: #004b87;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Paragraphs */
+p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Links */
+a {
+    color: #004b87;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #1e3c72;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    ul li {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
